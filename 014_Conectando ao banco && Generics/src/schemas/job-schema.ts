@@ -5,5 +5,5 @@ export const JobSchema = Joi.object({
   salary: Joi.number().required(),
   skills: Joi.array().required(),
   isRemote: Joi.boolean().required(),
-  until: Joi.string() || Joi.date
+  until: Joi.string() || Joi.date()
 });
